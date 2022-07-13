@@ -1,0 +1,82 @@
+#Sub{
+    background-color: $colordos;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#h2-tienda{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.giftcard h2{
+    margin: 20;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Quienes somos*/
+
+#titulo-qs{
+    font-size: large;
+    padding-top: 25px;
+    font-weight: 200;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 20px;
+    color: $colordos;
+
+}
+
+#sub-qs{ 
+    font-size: 15px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: orangered;
+}
+
+#section-qs img{
+    margin: 10px;
+    float: initial;
+    width: 300px;
+    height: 50%;
+}
+
+#section-qs p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-weight: 50;
+    margin: 20px;
+    color: $colordos;
+    
+    
+}
+
+/* Contacto */
+
+.contacto1 h2{
+    margin: 5px;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: $estilouno;
+}
+
+.texto-torneo{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+.Seccion-texto{
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    padding: 10px;
+}

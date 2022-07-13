@@ -1,0 +1,22 @@
+{
+  "name": "gamergy-bussolotti--responsive",
+  "version": "1.0.0",
+  "description": "sass",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss Css/newstyles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasBussolotti/Gamergy-Responsive-Bussolotti.git"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "Lucas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LucasBussolotti/Gamergy-Responsive-Bussolotti/issues"
+  },
+  "homepage": "https://github.com/LucasBussolotti/Gamergy-Responsive-Bussolotti#readme"
+}

@@ -1,0 +1,32 @@
+.footer-marcas{
+    display: none;
+}
+
+#footer{
+    background: linear-gradient(rgb(150, 26, 26),orange);
+    display: inline-block;
+    justify-content:space-between;
+    align-items: space-between;
+    height: 180px;
+    width: 100%;
+}
+#footer ul{
+    list-style: none;
+    
+}
+
+#footer ul li{
+    
+    color: $colordos;
+    display: block;
+    font-family: roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+    padding-right: 20px;
+   
+}
+#footer ul li:hover{
+    background-color:orangered ;
+}

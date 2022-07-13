@@ -1,0 +1,335 @@
+/* -----------------------------MEDIA 768PX-------------------------*/
+@media (min-width: 768px){
+
+    /*----------------INDEX-------------------*/
+    
+.contenedor-productos{
+    overflow-x: none;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 350px;
+    }
+    
+.contenedor-productos img{
+    width: 320px;
+    height: 300px;
+}
+
+.card-productos{
+    width: 100%;
+}
+
+.form-floating{
+    display: flex;
+}
+
+
+
+
+.slider-frame{
+    display: contents;
+   width: 100%;
+   height: auto;
+   margin: auto;
+   overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+    
+
+       /*-----------TIENDA---------*/
+.item-contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+        
+    }
+.item-contenedor img{
+    width: 300px;
+    height: 280px;
+    margin-top: 20px;
+    transition: all 500ms ease;
+    }
+
+#img1:hover{
+    transform: scale(1.1);
+}
+#img2:hover{
+    transform: scale(1.1);
+}
+#img3:hover{
+    transform: scale(1.1);
+}
+#img4:hover{
+    transform: scale(1.1);
+}
+#img5:hover{
+    transform: scale(1.1);
+}
+#img6:hover{
+    transform: scale(1.1);
+}
+#img7:hover{
+    transform: scale(1.1);
+}
+#img8:hover{
+    transform: scale(1.1);
+}
+
+    
+#h2-tienda{
+    text-align: center;
+    font-size: 30px;
+    font-family: $estilodos;
+    margin-top: 5px;
+    font-weight: 500;
+    
+}
+
+.item-contenedor a{
+    font-family: $estilouno;
+    font-weight: 200;
+    padding: 10px;
+    }
+
+.container-tienda{
+    display: flex;
+    margin: 20px;
+}
+
+.carousel{ 
+    height: 450px;
+    width: 400px;
+    
+}
+    
+
+.d-block{
+    width: 1000px;
+    height: auto;
+        
+    }
+#sillagamerh2{
+    text-align: center;
+}
+    
+    
+.carousel-caption button{
+    font-family: $estilouno;
+     font-size: 15px;
+    padding: 5px;
+     font-weight: 200;
+    border-radius: 10px;
+    float: right;
+}
+.carousel-caption button:hover{
+    background-color: $coloruno;
+        
+}
+
+
+/*----------------------------NAV-----------------*/
+nav{
+    display: flex;
+    
+}
+nav ul{
+    margin: 15px;
+    position: inherit;
+    height: 0;
+    left: 100%;
+    transition: none;
+}
+    
+    
+    
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    }
+    
+nav ul li a{
+    color: $colordos;
+    font-size: 15px;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    
+    
+    }
+li a.active, li a:hover{
+    background-color:none;
+    transition: .5s;
+    color: black;
+}
+nav ul li a:hover{
+    color: $colordos;
+    transform: all .5;
+}
+.checkbutton{
+    display: none;
+    }
+ #Sub{
+    padding: 20px;
+    }
+    
+/*-----------------------ESPORTS------------------------*/
+.img-esports{
+    width: 600px;
+    height: auto;
+    margin: 20px;
+}
+
+.titulos-esports{
+    margin: 20px;
+    font-weight: bold;
+}
+
+.texto-esports{
+    margin: 20px;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: roboto, sans-serif;
+}
+.video{
+    width: 70%;
+    margin: 100px;
+    padding-left: 20px;
+}
+
+/*---------------------QUIENES SOMOS--------------------*/
+
+#section-qs{
+    padding: 10px;
+}
+
+#section-qs img{
+    width: 400px;
+    height: 200px;
+    float: right;
+}
+
+/*------------------------CONTACTO----------------------*/
+
+.mapa{
+    display: contents;
+}
+
+.contacto2{
+    display: flex;
+}
+/*------------------------------FOOTER------------------------*/
+
+#footer{
+    width: 100%;
+    display: flex;
+}
+
+
+.footer-marcas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+
+}
+
+
+
+
+.footer-marcas img{
+    width: 200px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+
+ }
+@media (min-width: 1024px){
+
+/*------------------------NAV-----------------*/
+nav ul li a{
+    color: $colordos;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+/*--------------------QUIENES SOMOS-----------------*/
+
+#section-qs{
+    padding: 20px;
+}
+
+
+#section-qs p{
+    font-size: 20px;
+}
+#section-qs img{
+    height: 300px;
+    
+}
+
+#titulo-qs{
+    font-size: 25px;
+}
+#sub-qs{
+    font-size: 40px;
+}
+
+}
+
+
+.alert{
+    display: flex;
+    height: 50px;
+    width: 350px;
+    
+}
+.form-floating{
+    margin: 5px;
+    
+}
+
+.form-floating input{
+    background-color: $coloruno;
+    border: none;
+}
+
+.form-floating label{
+    font-family: $estilodos;
+    font-weight: 600;
+}

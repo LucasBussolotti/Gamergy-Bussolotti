@@ -1,0 +1,124 @@
+/*Index*/
+
+#Productos div{
+    padding: 5px;
+    overflow: hidden;
+    
+}
+
+.card-productos{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    img{
+        box-shadow: 3px 3px 3px 3px grey;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 200px;
+    height: 300px;
+    }
+    a{
+        text-decoration: none;
+        box-shadow: 1px 1px 1px 1px grey;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 3px;
+        padding: 2px;
+        color: black;
+        border-radius: 20px;  
+    }
+    
+}
+
+.card-productos a:hover{
+    transition: all .5s;
+    background-color: $coloruno;
+}
+
+.contenedor-productos{
+    display: flex;
+    height: 200px;
+    padding: 10px;
+    overflow-x: hidden;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+ /*Giftcards*/
+#Giftcard-steam{
+    padding: 30px;
+    overflow-x: scroll;
+}
+
+.giftcard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+
+.giftcard a{
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    padding: 2px;
+    color: black;
+    margin: 10px;
+    box-shadow: 1px 1px 1px 1px grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.giftcard a:hover{
+    background-color: orange;
+}
+
+.contenedor-gift{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* Tienda*/
+.item-contenedor{
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    margin: 35px;
+    box-shadow: 2px grey;
+}
+
+.item-contenedor img{
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    box-shadow: grey 3px 3px 3px 3px;
+}
+
+.item-contenedor a{
+    text-decoration: none;
+    box-shadow: 1px 1px 1px 1px grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 3px;
+    padding: 2px;
+    color: black;
+    border-radius: 10px;
+    
+}
+
+.item-contenedor a:hover{
+    transition: all .5s;
+    background-color: $coloruno;
+}
+
+
+
+
+
+
