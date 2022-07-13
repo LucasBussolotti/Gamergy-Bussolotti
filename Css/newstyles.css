@@ -35,7 +35,6 @@
   font-weight: 200;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   margin-left: 20px;
-  color: white;
 }
 
 #sub-qs {
@@ -44,7 +43,6 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-left: 20px;
   margin-top: 20px;
-  color: orangered;
 }
 
 #section-qs img {
@@ -194,6 +192,14 @@
   background-color: orange;
 }
 
+#titulo-qs {
+  color: rgb(206, 201, 201);
+}
+
+#sub-qs {
+  color: orangered;
+}
+
 .slider-frame {
   display: none;
 }
@@ -254,15 +260,33 @@
   display: none;
 }
 
-.torneo1 {
+.torneo1, .torneo3, .torneo2 {
   width: 100%;
   height: 300px;
   margin: 10px;
   padding: 20px;
 }
 
-.torneo1:hover {
+.torneo1:hover, .torneo3:hover, .torneo2:hover {
   background-color: rgb(224, 199, 153);
+}
+
+.torneo2:hover {
+  background-color: greenyellow;
+}
+
+.torneo3:hover {
+  background-color: orangered;
+}
+
+.titulos-esports {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.texto-esports {
+  font-size: 18px;
+  font-weight: 100;
 }
 
 .footer-marcas {
@@ -554,8 +578,6 @@ li a, li a:hover {
   }
   .texto-esports {
     margin: 20px;
-    font-size: 15px;
-    font-weight: 300;
     font-family: roboto, sans-serif;
   }
   .video {

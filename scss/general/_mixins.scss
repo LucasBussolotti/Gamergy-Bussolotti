@@ -1,0 +1,12 @@
+@mixin fontsize($size,$weight) {
+    font-size: $size;
+    font-weight: $weight;
+}
+
+.titulos-esports{
+    @include fontsize(25px,700);
+}
+
+.texto-esports{
+    @include fontsize(18px,100);
+}

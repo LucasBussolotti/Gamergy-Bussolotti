@@ -78,3 +78,17 @@
     
     
 }
+
+.torneo2{
+    @extend .torneo1;
+    &:hover{
+        background-color: greenyellow;
+    }
+}
+
+.torneo3{
+    @extend .torneo1;
+    &:hover{
+        background-color: orangered;
+    }
+}

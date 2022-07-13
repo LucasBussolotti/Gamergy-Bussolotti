@@ -82,29 +82,30 @@
     transition: all 500ms ease;
     }
 
-#img1:hover{
-    transform: scale(1.1);
+#img1{
+
+    &:hover{transform: scale(1.1);}
 }
-#img2:hover{
-    transform: scale(1.1);
+#img2{
+    &:hover{transform: scale(1.1);}
 }
-#img3:hover{
-    transform: scale(1.1);
+#img3{
+    &:hover{transform: scale(1.1);}
 }
-#img4:hover{
-    transform: scale(1.1);
+#img4{
+    &:hover{transform: scale(1.1);}
 }
-#img5:hover{
-    transform: scale(1.1);
+#img5{
+    &:hover{transform: scale(1.1);}
 }
-#img6:hover{
-    transform: scale(1.1);
+#img6{
+    &:hover{transform: scale(1.1);}
 }
-#img7:hover{
-    transform: scale(1.1);
+#img7{
+    &:hover{transform: scale(1.1);}
 }
-#img8:hover{
-    transform: scale(1.1);
+#img8{
+    &:hover{transform: scale(1.1);}
 }
 
     
@@ -219,8 +220,6 @@ nav ul li a:hover{
 
 .texto-esports{
     margin: 20px;
-    font-size: 15px;
-    font-weight: 300;
     font-family: roboto, sans-serif;
 }
 .video{

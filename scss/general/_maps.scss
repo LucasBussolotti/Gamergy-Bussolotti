@@ -1,0 +1,13 @@
+$quienes-somos: (
+    titulo:rgb(206, 201, 201),
+    subtitulo: orangered,
+);
+
+#titulo-qs{
+    color: map-get($map: $quienes-somos, $key:titulo );
+}
+
+#sub-qs{
+    color:map-get($map: $quienes-somos, $key:subtitulo );
+}
+    
