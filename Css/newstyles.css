@@ -82,6 +82,16 @@
   padding: 10px;
 }
 
+/* ---------------SECCION ESPORTS-----------------*/
+.titulos-esports {
+  margin: 10px;
+}
+
+.texto-esports {
+  margin: 5px;
+  font-weight: 300;
+}
+
 /*Index*/
 #Productos div {
   padding: 5px;
@@ -128,9 +138,13 @@
   overflow-x: scroll;
 }
 
+.contenedor-productos a:hover {
+  transition: all 0.5s;
+}
+
 /*Giftcards*/
 #Giftcard-steam {
-  padding: 30px;
+  margin: 25px;
   overflow-x: scroll;
 }
 
@@ -158,7 +172,6 @@
 
 .contenedor-gift {
   display: flex;
-  justify-content: space-around;
 }
 
 /* Tienda*/
@@ -227,12 +240,13 @@
 
 /*Esports*/
 .video {
-  width: 100%;
+  width: 90%;
+  margin: 10px;
 }
 
 .img-esports {
-  width: 100%;
-  height: 400px;
+  width: 90%;
+  height: 300px;
   margin: 8px;
   border: 2px solid black;
   border-radius: 20px;
@@ -279,6 +293,55 @@
   background-color: orangered;
 }
 
+.redes-sociales {
+  position: fixed;
+  right: 0;
+  top: 35%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem;
+  display: flex;
+  transition: all 0.5s;
+}
+
+.bi-facebook {
+  background: #2E406E;
+}
+
+.bi-twitter {
+  background: #339DC5;
+}
+
+.bi-github {
+  background: rgb(29, 26, 26);
+}
+
+.bi-instagram {
+  background: linear-gradient(blueviolet, orangered);
+}
+
+.icon:first-child {
+  border-radius: 1rem 0 0 0;
+}
+
+.icon:last-child {
+  border-radius: 0 0 0 1rem;
+}
+
+.icon:hover {
+  padding-right: 3rem;
+  border-radius: 1rem 0 0 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.42);
+}
+
 .titulos-esports {
   font-size: 25px;
   font-weight: 700;
@@ -289,36 +352,25 @@
   font-weight: 100;
 }
 
-.footer-marcas {
-  display: none;
-}
-
 #footer {
-  background: linear-gradient(rgb(150, 26, 26), orange);
-  display: inline-block;
-  justify-content: space-between;
-  align-items: space-between;
-  height: 180px;
+  background-color: orange;
+  height: 120px;
   width: 100%;
 }
 
 #footer ul {
   list-style: none;
+  padding: 5px;
 }
 
 #footer ul li {
-  color: white;
-  display: block;
-  font-family: roboto, sans-serif;
+  margin: 10px 10px;
   font-weight: bold;
-  font-size: 15px;
-  text-align: center;
-  margin-top: 20px;
-  padding-right: 20px;
+  font-size: 12px;
 }
 
-#footer ul li:hover {
-  background-color: orangered;
+#footer img {
+  display: none;
 }
 
 /*Estilizado de el menú*/
@@ -391,69 +443,32 @@ li a, li a:hover {
 @media (min-width: 768px) {
   /*----------------INDEX-------------------*/
   .contenedor-productos {
-    overflow-x: none;
-    justify-content: center;
-    align-items: center;
+    overflow-x: scroll;
     margin: 20px;
     height: 350px;
   }
   .contenedor-productos img {
-    width: 320px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
   }
   .card-productos {
     width: 100%;
   }
-  .form-floating {
-    display: flex;
-  }
-  .slider-frame {
-    display: contents;
-    width: 100%;
-    height: auto;
-    margin: auto;
+  .contendor-gift {
     overflow: hidden;
   }
-  .slider-frame ul {
-    display: flex;
-    padding: 0;
-    width: 400%;
-    animation: slide 16s infinite alternate ease-in-out;
+  .giftcard {
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
   }
-  .slider-frame li {
-    list-style: none;
-    width: 100%;
+  .form-floating {
+    display: none;
   }
-  .slider-frame img {
-    width: 100%;
-    height: 70vh;
-    margin: auto;
-  }
-  @keyframes slide {
-    0% {
-      margin-left: 0;
-    }
-    20% {
-      margin-left: 0;
-    }
-    25% {
-      margin-left: -100%;
-    }
-    45% {
-      margin-left: -100%;
-    }
-    50% {
-      margin-left: -200%;
-    }
-    75% {
-      margin-left: -200%;
-    }
-    75% {
-      margin-left: -300%;
-    }
-    95% {
-      margin-left: -300%;
-    }
+  .icon {
+    padding: 0.9rem;
   }
   /*-----------TIENDA---------*/
   .item-contenedor {
@@ -503,12 +518,16 @@ li a, li a:hover {
     padding: 10px;
   }
   .container-tienda {
-    display: flex;
-    margin: 20px;
+    padding: 20px;
   }
   .carousel {
     height: 450px;
     width: 400px;
+  }
+  .carousel-item {
+    height: 450px;
+    width: 400px;
+    margin-bottom: 100px;
   }
   .d-block {
     width: 1000px;
@@ -517,15 +536,15 @@ li a, li a:hover {
   #sillagamerh2 {
     text-align: center;
   }
-  .carousel-caption button {
+  .sillabuton {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 15px;
+    font-size: 13px;
     padding: 5px;
     font-weight: 200;
     border-radius: 10px;
-    float: right;
+    float: center;
   }
-  .carousel-caption button:hover {
+  .sillabutton:hover {
     background-color: orange;
   }
   /*----------------------------NAV-----------------*/
@@ -542,7 +561,8 @@ li a, li a:hover {
   nav ul li {
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 2px;
+    font-size: 10px;
   }
   nav ul li a {
     color: white;
@@ -568,7 +588,7 @@ li a, li a:hover {
   }
   /*-----------------------ESPORTS------------------------*/
   .img-esports {
-    width: 600px;
+    width: 350px;
     height: auto;
     margin: 20px;
   }
@@ -581,7 +601,7 @@ li a, li a:hover {
     font-family: roboto, sans-serif;
   }
   .video {
-    width: 70%;
+    width: 40%;
     margin: 100px;
     padding-left: 20px;
   }
@@ -600,22 +620,27 @@ li a, li a:hover {
   }
   .contacto2 {
     display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /*------------------------------FOOTER------------------------*/
   #footer {
     width: 100%;
     display: flex;
   }
-  .footer-marcas {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-  }
-  .footer-marcas img {
-    width: 200px;
+  #footer img {
+    visibility: visible;
     height: 100px;
-    margin-right: 20px;
+    margin-top: 10px;
+  }
+  #footer ul {
+    display: flex;
+  }
+  #footer ul li {
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 30px;
+    font-size: 15px;
   }
 }
 @media (min-width: 1024px) {
@@ -642,6 +667,106 @@ li a, li a:hover {
   }
   #sub-qs {
     font-size: 40px;
+  }
+  .slider-frame {
+    display: contents;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+  }
+  .slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+  }
+  .slider-frame li {
+    list-style: none;
+    width: 100%;
+  }
+  .slider-frame img {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    object-fit: cover;
+  }
+  @keyframes slide {
+    0% {
+      margin-left: 0;
+    }
+    20% {
+      margin-left: 0;
+    }
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+    50% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -200%;
+    }
+    75% {
+      margin-left: -300%;
+    }
+    95% {
+      margin-left: -300%;
+    }
+  }
+  #footer img {
+    display: flex;
+  }
+  #footer ul {
+    display: flex;
+  }
+  #footer ul li {
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 30px;
+    font-size: 18px;
+  }
+  .giftcard {
+    display: flex;
+    margin-right: 90px;
+  }
+  /*-----------------------ESPORTS------------------------*/
+  .img-esports {
+    width: 500px;
+    height: auto;
+    margin: 20px;
+  }
+  .titulos-esports {
+    margin: 25px;
+    font-weight: bold;
+  }
+  .texto-esports {
+    margin: 23px;
+    font-family: roboto, sans-serif;
+  }
+  .video {
+    width: 70%;
+    margin-left: 60px;
+    padding-left: 20px;
+  }
+  .container-tienda {
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+    justify-items: center;
+    align-items: center;
+  }
+  .carousel {
+    width: 400px;
+    margin: 30px;
+    object-fit: cover;
+  }
+  .carousel-item {
+    height: 450px;
+    width: 400px;
   }
 }
 .alert {

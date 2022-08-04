@@ -28,7 +28,8 @@
         margin: 3px;
         padding: 2px;
         color: black;
-        border-radius: 20px;  
+        border-radius: 20px;
+         
     }
     
 }
@@ -46,10 +47,13 @@
     width: 100%;
     overflow-x: scroll;
 }
+.contenedor-productos a:hover{
+    transition: all .5s;
+}
 
  /*Giftcards*/
 #Giftcard-steam{
-    padding: 30px;
+    margin: 25px;
     overflow-x: scroll;
 }
 
@@ -81,7 +85,7 @@
 
 .contenedor-gift{
     display: flex;
-    justify-content: space-around;
+    
 }
 
 

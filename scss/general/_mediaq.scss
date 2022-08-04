@@ -4,69 +4,44 @@
     /*----------------INDEX-------------------*/
     
 .contenedor-productos{
-    overflow-x: none;
-    justify-content: center;
-    align-items: center;
+    overflow-x: scroll;
+    
     margin: 20px;
     height: 350px;
     }
     
 .contenedor-productos img{
-    width: 320px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    
 }
 
 .card-productos{
     width: 100%;
-}
-
-.form-floating{
-    display: flex;
-}
-
-
-
-
-.slider-frame{
-    display: contents;
-   width: 100%;
-   height: auto;
-   margin: auto;
-   overflow: hidden;
-}
-
-.slider-frame ul{
-    display: flex;
-    padding: 0;
-    width: 400%;
-
-    animation: slide 16s infinite alternate ease-in-out;
-}
-
-.slider-frame li{
-    list-style: none;
-    width: 100%;
-}
-
-.slider-frame img{
-    width: 100%;
-    height: 70vh;
-    margin: auto;
-}
-
-@keyframes slide{
-    0% {margin-left: 0;}
-    20% {margin-left: 0;}
     
-    25% {margin-left: -100%;}
-    45% {margin-left: -100%;}
-
-    50% {margin-left: -200%;}
-    75% {margin-left: -200%;}
-
-    75% {margin-left: -300%;}
-    95% {margin-left: -300%;}
 }
+
+.contendor-gift{
+    overflow: hidden;
+    
+}
+
+.giftcard{
+    overflow: hidden;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 25px;
+}
+.form-floating{
+    display: none;
+}
+
+.icon{
+    padding: .9rem;
+}
+
+
     
 
        /*-----------TIENDA---------*/
@@ -125,14 +100,20 @@
     }
 
 .container-tienda{
-    display: flex;
-    margin: 20px;
+    
+    padding: 20px;
 }
 
 .carousel{ 
     height: 450px;
     width: 400px;
     
+}
+
+.carousel-item{
+    height: 450px;
+    width: 400px;
+    margin-bottom: 100px;
 }
     
 
@@ -146,15 +127,15 @@
 }
     
     
-.carousel-caption button{
+.sillabuton{
     font-family: $estilouno;
-     font-size: 15px;
+    font-size: 13px;
     padding: 5px;
-     font-weight: 200;
+    font-weight: 200;
     border-radius: 10px;
-    float: right;
+    float: center;
 }
-.carousel-caption button:hover{
+.sillabutton:hover{
     background-color: $coloruno;
         
 }
@@ -178,7 +159,8 @@ nav ul{
 nav ul li{
     display: inline-block;
     line-height: 80px;
-    margin: 0 5px;
+    margin: 0 2px;
+    font-size: 10px;
     }
     
 nav ul li a{
@@ -208,7 +190,7 @@ nav ul li a:hover{
     
 /*-----------------------ESPORTS------------------------*/
 .img-esports{
-    width: 600px;
+    width: 350px;
     height: auto;
     margin: 20px;
 }
@@ -223,7 +205,7 @@ nav ul li a:hover{
     font-family: roboto, sans-serif;
 }
 .video{
-    width: 70%;
+    width: 40%;
     margin: 100px;
     padding-left: 20px;
 }
@@ -248,31 +230,43 @@ nav ul li a:hover{
 
 .contacto2{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*------------------------------FOOTER------------------------*/
 
 #footer{
     width: 100%;
     display: flex;
+    
 }
 
-
-.footer-marcas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 25px;
-
-}
-
-
-
-
-.footer-marcas img{
-    width: 200px;
+#footer img{
+    visibility: visible;
     height: 100px;
-    margin-right: 20px;
+    margin-top: 10px;
 }
+
+#footer ul{
+    display: flex;
+    
+}
+
+#footer ul li{
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 30px;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
 
 
  }
@@ -309,6 +303,117 @@ nav ul li a{
     font-size: 40px;
 }
 
+.slider-frame{
+    display: contents;
+   width: 100%;
+   height: auto;
+   margin: auto;
+   overflow: hidden;
+}
+
+.slider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+.slider-frame li{
+    list-style: none;
+    width: 100%;
+}
+
+.slider-frame img{
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    object-fit: cover;
+}
+
+@keyframes slide{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    75% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+}
+
+#footer img{
+    display: flex;
+}
+
+#footer ul{
+    display: flex;
+    
+}
+
+#footer ul li{
+    justify-content: space-around;
+    align-items: center;
+    margin: 40px 30px;
+    font-size: 18px;
+}
+
+
+.giftcard{
+    display: flex;
+    margin-right: 90px;
+    
+}
+
+/*-----------------------ESPORTS------------------------*/
+.img-esports{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+}
+
+.titulos-esports{
+    margin: 25px;
+    font-weight: bold;
+}
+
+.texto-esports{
+    margin: 23px;
+    font-family: roboto, sans-serif;
+}
+.video{
+    width: 70%;
+    margin-left: 60px;
+    padding-left: 20px;
+}
+
+.container-tienda{
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+.carousel{ 
+    width: 400px;
+    margin: 30px;
+    object-fit: cover;
+    
+    
+}
+
+.carousel-item{
+    height: 450px;
+    width: 400px;
+    
+}
+    
+
+
 }
 
 
@@ -318,6 +423,9 @@ nav ul li a{
     width: 350px;
     
 }
+
+
+
 .form-floating{
     margin: 5px;
     
